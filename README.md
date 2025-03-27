@@ -1,5 +1,4 @@
 # CronJobs-Kubernetes-Rancher
-This repo demonstrates how to create a simple cron job that runs every 1 minute
 
 A cron job is a scheduled job in Kubernetes that runs at a specific time or interval.
 
