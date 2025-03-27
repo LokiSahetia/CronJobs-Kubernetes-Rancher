@@ -4,7 +4,7 @@ metadata:
   name: hello-cronjob
   namespace: jobby
 spec:
-  schedule: "*/1 * * * *"  # Runs every 10 minutes
+  schedule: "*/1 * * * *"  # Runs every minute
   jobTemplate:
     spec:
       template:
