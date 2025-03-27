@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hello-cronjob
+  namespace: jobby
+spec:
+  schedule: "*/1 * * * *"  # Runs every 10 minutes
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello-container
+            image: alpine
+            command: ["echo", "Hello, children of planet Earth!"]
+          restartPolicy: Never
